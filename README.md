@@ -56,22 +56,7 @@
    - 센서·LCD·펌프·팬 각각 독립 태스크로 구성  
    - **우선순위 조정으로 LCD 미갱신 문제 해결**
 
----
 
-## 🧠 시스템 구조
-
-```text
- ┌────────────────────────────┐
- │        Smart Farm          │
- ├────────────┬───────────────┤
- │ Sensors    │ Actuators     │
- │ DHT11      │ Step Motor (Fan) │
- │ WaterLevel │ Servo (Pump)  │
- └──────┬─────┴──────┬────────┘
-        │             │
-        ▼             ▼
-   FreeRTOS Task   LCD / RGB / Buzzer
-```
 ---
 
 ## 🧩 트러블슈팅 및 배운 점
